@@ -1,3 +1,8 @@
+# Encryption program 			#
+#								#
+# Made by Renzo Westerbeek 		#
+# (c) 2013						#
+
 # Define functions, imports and lists
 import random
 
