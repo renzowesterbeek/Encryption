@@ -4,13 +4,17 @@ def encrypt(originalString):
 	toAdd = 1
 	endString = ""
 	for c in originalString:
-		indexNum = alfabet.index(c)
-		encNum = indexNum + toAdd
+	
+		if c == " ":
+			endString += ":"
+		else:
+			indexNum = alfabet.index(c)
+			encNum = indexNum + toAdd
 		
-		if encNum > 25:
-			encNum = encNum - 26
+			if encNum > 25:
+				encNum = encNum - 26
 			
-		endString += alfabet[encNum]
+			endString += alfabet[encNum]
 		
 	print "Your encrypted word is: " + endString
 			
